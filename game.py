@@ -21,8 +21,8 @@ bg_img = pygame.image.load(r"D:\Studies\Projects\Python\College_files\Images\Bg.
 bg_img = pygame.transform.scale(bg_img, (W, H))
 
 #image scale
-player_img = pygame.transform.scale(player_img, (60, 60))
-enemy_img = pygame.transform.scale(enemy_img, (50, 50))
+player_img = pygame.transform.scale(player_img, (100, 80))
+enemy_img = pygame.transform.scale(enemy_img, (50, 70))
 bullet_img = pygame.transform.scale(bullet_img, (30, 30))
 
 #set player position
