@@ -21,8 +21,8 @@ def calculate_gpa():
     total_grade_points = 0
 
     for i in range(1, n + 1):
-        internal = float(input(f"Internal marks for subject {i} (out of 50): "))
-        external = float(input(f"External marks for subject {i} (out of 100): "))
+        internal = float(input(f"Internal marks for subject  (out of 50): "))
+        external = float(input(f"External marks for subject  (out of 100): "))
 
         total = calc_total(internal, external)
         grade, gp = get_grade_point(total)
