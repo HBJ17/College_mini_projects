@@ -1,12 +1,9 @@
-#1
 def classify_password(pwd):
     has_upper = any(ch.isupper() for ch in pwd)
     has_lower = any(ch.islower() for ch in pwd)
     has_digit = any(ch.isdigit() for ch in pwd)
     has_special = any(not ch.isalnum() for ch in pwd)
-
     missing = []
-
     if not has_upper:
         missing.append("Add at least one uppercase letter")
     if not has_lower:
@@ -22,8 +19,6 @@ def classify_password(pwd):
         return "Moderate", missing
     else:
         return "Weak", missing
-
-
 def Check_Paterns(password):
     find = password.find("123")
     count = password.count("1")
@@ -47,8 +42,6 @@ def Check_Paterns(password):
         print("Your password ends with Z")
     else:
         print("Your password does not contain Z")
-
-
 a = 0
 while a < 3:
     password = input("Enter password: ")
