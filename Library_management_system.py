@@ -1,7 +1,8 @@
 library = {}  
 
 def add_book():
-    print("\n    Add New Book    ")
+    print()
+    print("    Add New Book    ")
     book_id = input("Enter Book ID: ").strip()
     if book_id in library:
         print("A book with this ID already exists!")
@@ -25,7 +26,8 @@ def add_book():
 
 
 def update_book_status():
-    print("\n    Update Book Status (Available/Issued)    ")
+    print()
+    print("    Update Book Status (Available/Issued)    ")
     book_id = input("Enter Book ID: ").strip()
     if book_id not in library:
         print("No book found with this ID.")
@@ -43,7 +45,8 @@ def update_book_status():
 
 
 def transfer_book_section():
-    print("\n    Transfer Book to Another Section    ")
+    print()
+    print("    Transfer Book to Another Section    ")
     book_id = input("Enter Book ID: ").strip()
     if book_id not in library:
         print("No book found with this ID.")
@@ -57,7 +60,8 @@ def transfer_book_section():
 
 
 def display_all_books():
-    print("\n    List of All Books    ")
+    print()
+    print("    List of All Books    ")
     if not library:
         print("No books in the library yet.")
         return
@@ -74,7 +78,8 @@ def display_all_books():
 
 def main():
     while True:
-        print("\n       Library Management System       ")
+        print()
+        print("       Library Management System       ")
         print("1. Add New Book")
         print("2. Update Book Availability Status")
         print("3. Transfer Book to Another Section")
