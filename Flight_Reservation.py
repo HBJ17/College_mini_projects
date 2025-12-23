@@ -1,4 +1,19 @@
-flights = {}
+flights = {
+    "1" : {
+        "Airline": "IndiGo",
+        "From": "Chennai",
+        "To": "Delhi",
+        "Seats": 120
+    },
+
+
+    "2" : {
+        "Airline": "Air India",
+        "From": "Mumbai",
+        "To": "Bangalore",
+        "Seats": 85
+    }
+}
 
 def add_flight():
     fid = input("Flight ID: ")
@@ -9,13 +24,17 @@ def add_flight():
         "available_seats": int(input("Seats: "))
     }
 
+    print("Flight Added Successfully")
+
 def update_seats():
     fid = input("Flight ID: ")
     flights[fid]["available_seats"] = int(input("New Seats: "))
+    print("Seats Updated Successfully")
 
 def change_route():
     fid = input("Flight ID: ")
     flights[fid]["destination"] = input("New Destination: ")
+    print("Route Updated Successfully")
 
 def display_flights():
     for f in flights.values():
