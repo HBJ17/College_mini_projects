@@ -1,4 +1,24 @@
-library = {}
+library = {
+    "B101": {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "status": "Available",
+        "section": "Self Help"
+    },
+    "B102": {
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "status": "Issued",
+        "section": "Programming"
+    },
+    "B103": {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "status": "Available",
+        "section": "Fiction"
+    }
+}
+
 
 def add_book():
     book_id = input("Book ID: ")
